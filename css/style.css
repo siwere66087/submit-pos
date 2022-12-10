@@ -122,7 +122,31 @@ margin-right: 2%;
 }
 
 
-/* // */
+/* products */
+
+.container{
+  height: 80vh;
+  padding: 10px;
+  border-radius: border-box;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.card{
+border-radius: 43px;
+margin-top: 20px;
+}
+@media only screen and (max-width: 700px) and (min-width: 300px){
+  .container{
+    margin-top: 300px;
+    display:inline !important;
+    margin: 10px;
+    max-width: 500px;
+    align-items: center;
+  }
+}
+
+
 
 /* admin */
 
@@ -333,9 +357,16 @@ table td {
 }
 
 
+/* submit and delete from form */
 
+.submt{
 
+background-color: rgb(235, 11, 11);
+width: 10rem;
+height: 5rem;
+margin-top: 5rem;
 
+}
 
 
 

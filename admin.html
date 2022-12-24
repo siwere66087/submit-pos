@@ -13,7 +13,7 @@
  <nav class="navbar">
   <div class="logo_nav">
     <a href="#" class="logo">sm exclusive</a>
-    <button class="navbar_toggle">
+    <button type="button" class="navbar_toggle">
       <i class="fas fa-bars"></i>
     </button>
   </div>
@@ -33,7 +33,7 @@
 <table>
 <tr>
 <td>
-<form autocomplete="off" onsubmit="onFormSubmit()">
+<form autocomplete="on" onsubmit="onFormSubmit()">
 <div>
 <label for="productId">Product id</label>
 <input type="text" name="productId" id="productId">
@@ -44,7 +44,7 @@
 </div>
 <div>
 <label for="description">description</label>
-<input type="number" name="qty" id="qty">
+<input type="text" name="description" id="description">
 </div>
 <div>
 <label for="perPrice">Price</label>
@@ -52,11 +52,14 @@
 </div>
 
 <div class="form_action--button">
+
+
 <input type="submit" value="Submit">
 <input type="reset" value="Reset">
 
-<button onClick="onEdit(this)">Edit</button> 
-<button onClick="onDelete(this)">Delete</button>
+<button onClick="addArray()">add</button> 
+
+<button onClick="deleteArray()">Delete</button>
 </div>
 </form>
 
